@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="icon" href="{% static '../static/assets/img/cec-logo.jpg' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/login-css.css'  %}">
+
+    </head>
+    <body>
+
+        <div class="login-box">
+            <img src="{% static 'assets/img/avatar-default-icon.png' %}" class="avatar">
+                <h1>LOGIN</h1>
+                    {% if message %}
+                    <h4> {{ message }}</h4>
+                    {% endif %}
+                <form method="post">
+                    {% csrf_token %}
+                    <p>Username</p>
+                    <input class="abc" type="text" name="Username" placeholder="Enter Username">
+                    <p>Password</p>
+                    <input class="abc" type="password" name="Password" placeholder="Enter Password"><br>
+                    <input class="abc" type="submit" name="" value="Login"><br>
+                    <input class="checkbox" type="checkbox" id="remember-me" name="remember" value="Yes">
+                    <label class="checkbox" for="remember-me"> Remember me</label><br>
+                    <a href="#">Forgot password? </a><br>
+                    <a href="{% url 'hostelapp:signup' %}">Don't have an account? Sign Up</a>
+
+                </form>
+        </div>
+
+    </body>
+</html>
+
+

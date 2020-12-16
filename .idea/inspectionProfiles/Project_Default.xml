@@ -1,0 +1,34 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="21">
+            <item index="0" class="java.lang.String" itemvalue="django-sekizai" />
+            <item index="1" class="java.lang.String" itemvalue="django-flat-theme" />
+            <item index="2" class="java.lang.String" itemvalue="django-treebeard" />
+            <item index="3" class="java.lang.String" itemvalue="html5lib" />
+            <item index="4" class="java.lang.String" itemvalue="djangocms-admin-style" />
+            <item index="5" class="java.lang.String" itemvalue="django-crispy-forms" />
+            <item index="6" class="java.lang.String" itemvalue="django-flat-responsive" />
+            <item index="7" class="java.lang.String" itemvalue="xhtml2pdf" />
+            <item index="8" class="java.lang.String" itemvalue="asgiref" />
+            <item index="9" class="java.lang.String" itemvalue="reportlab" />
+            <item index="10" class="java.lang.String" itemvalue="arabic-reshaper" />
+            <item index="11" class="java.lang.String" itemvalue="django-classy-tags" />
+            <item index="12" class="java.lang.String" itemvalue="django-cms" />
+            <item index="13" class="java.lang.String" itemvalue="django-admin-interface" />
+            <item index="14" class="java.lang.String" itemvalue="python-bidi" />
+            <item index="15" class="java.lang.String" itemvalue="sqlparse" />
+            <item index="16" class="java.lang.String" itemvalue="future" />
+            <item index="17" class="java.lang.String" itemvalue="django-colorfield" />
+            <item index="18" class="java.lang.String" itemvalue="django-jazzmin" />
+            <item index="19" class="java.lang.String" itemvalue="pytz" />
+            <item index="20" class="java.lang.String" itemvalue="django-formtools" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

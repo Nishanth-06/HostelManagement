@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Warden Home</title>
+    <link rel="icon" href="{% static '../static/assets/img/cec-logo.jpg' %}">
+   <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body>
+    <div class="container">
+        <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Hostel</th>
+                <th scope="col">Room no</th>
+                <th scope="col">Type</th>
+                <th scope="col">Status</th>
+                <th scope="col">Student Name</th>
+                <th scope="col">USN</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Maintainence</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for rm in room %}
+    <tr>
+
+    <td>{{ rm.hostel }}</td>
+                <td>{{ rm.no }}</td>
+                <td>{{ rm.room_type }}</td>
+                <td>
+                    {% if rm.vacant %}
+                    vacant
+                    {% else %}
+                    occupied
+                    {% endif %}
+                </td>
+                <td>
+                {% if rm.vacant %}
+                    -----
+                    {% else %}
+                    {{ rm.student.student_name }}
+                    {% endif %}
+                </td>
+                <td>
+                    {% if rm.vacant %}
+                    -----
+                    {% else %}
+                    {{ rm.student.USN }}
+                    {% endif %}
+                </td>
+                <td>
+                {% if rm.vacant %}
+                    -----
+                    {% else %}
+                    {{ rm.student.gender }}
+                    {% endif %}
+                </td>
+                <td>
+                {% if rm.vacant %}
+                    -----
+                    {% else %}
+                    {{ rm.repair}}
+                    {% endif %}
+                </td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+    </div>
+
+</body>
+</html>

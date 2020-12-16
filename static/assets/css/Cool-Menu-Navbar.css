@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.header{
+    color:white;
+    background-color:#393e46;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 13%; 
+    
+}
+.header > div {
+    width: 100px;
+    margin: 2px;
+    text-align: center;
+  }
+
+  .logo{
+      width: 70%;
+  }
+
+  .heading{
+      padding-top:10px;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: bold;
+      
+  }
+
+
+.cool-menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('../../assets/img/hostel2.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin: 5px 15px -5px 15px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 23px;
+    display: block;
+    padding: 0px 20px;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+ul li .menu .f-word {
+    display: inline-block;
+    position: relative;
+    transition: transform .3s;
+}
+
+ul li .menu .s-word {
+    display: inline-block;
+    position: relative;
+    transition: transform .3s;
+}
+
+ul li .menu .s-word {
+    margin-left: -6px;
+}
+
+ul li .menu .f-word::before {
+    position: absolute;
+    content: attr(data-hover);
+}
+
+ul li .menu .s-word::before {
+    position: absolute;
+    content: attr(data-hover);
+}
+
+ul li .menu .f-word::before {
+    color: #17026c;
+    top: 110%;
+}
+
+ul li .menu .s-word::before {
+    color: #17026c;
+    bottom: 110%;
+}
+
+a:hover .f-word {
+    transform: translate3d(0, -110%, 0);
+}
+
+a:hover .s-word {
+    transform: translate3d(0, 110%, 0);
+}

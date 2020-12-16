@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if msg %}
+    <div class="alert alert-warning" role="alert">
+        You have Not Selected Room Please Select<a href="{% url  'hostelapp:room_select' %}" class="alert-link"> ROOM</a>.
+    </div>
+    {% endif %}
+
+    <div class="container">
+        <div class="jumbotron">
+            <p> Name : {{ student.student_name }}</p>
+            <p> USN : {{ student.USN }}</p>
+            <p> Branch : {{ student.Branch }}</p>
+            <p> Contact No : {{ student.student_mbl_no}}</p>
+            <p> Father's Name : {{ student.father_name}}</p>
+            <p>  Father's Contact No: {{ student.father_mbl_no}}</p>
+            <p> DOB : {{ student.dob}}</p>
+
+
+        </div>
+
+      </div>
+
+
+
+
+{% endblock %}

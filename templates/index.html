@@ -1,0 +1,66 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CANHOST</title>
+
+    <link rel="stylesheet" href="{% static 'assets/css/Cool-Menu-Navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/navbar-center-Joce-1.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/navbar-center-Joce.css' %} ">
+    <link rel="stylesheet" href="{% static 'assets/css/Navbar-with-menu-and-login.css' %} ">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css'%} ">
+    <link rel="icon" href="{% static '../static/assets/img/cec-logo.jpg' %}">
+
+    <!-- bootstrap-scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+    <div class="header">
+        <div class="header-item1">
+            <img class="logo" src="{% static 'assets\img\logo1.png' %}">
+        </div>
+        <div class="header-item2">
+            <h1 class="heading">CANHOST</h1>
+        </div>
+
+
+
+
+
+    </div>
+    <section class="cool-menu">
+        <nav>
+            <ul>
+                <li><a href="{% url 'hostelapp:signup' %} "><span class="menu">
+                            <span class="f-word" data-hover="Regis" >Regis</span>
+                            <span class="s-word" data-hover="tration" >tration</span>
+                        </span></a></li>
+                <li><a href="{% url 'hostelapp:login' %}"><span class="menu">
+                            <span class="f-word" data-hover="Log" >Log</span>
+                            <span class="s-word" data-hover="In" >in</span>
+                        </span></a></li>
+                <li><a href="#"><span class="menu">
+                            <span class="f-word" data-hover="Cont" >Cont</span>
+                            <span class="s-word" data-hover="act" >act</span>
+                        </span></a></li>
+                <li><a href="#"><span class="menu">
+                            <span class="f-word" data-hover="Feed" >Feed</span>
+                            <span class="s-word" data-hover="back" >back</span>
+                        </span></a></li>
+            </ul>
+        </nav>
+    </section>
+
+</body>
+
+</html>
